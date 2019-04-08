@@ -1,0 +1,52 @@
+<body class="bg-dark">
+  <div class="row">
+  <div class="col-md-7 mx-auto">
+    <div class="card mt-3">
+      <div class="card-header h3 text-center text-warning bg-default">
+        ADD EMPLOYEE
+      </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="name" aria-describedby="nameHelp"
+              placeholder="Enter name" />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputDob">DOB</label>
+            <input type="date" class="form-control" [(ngModel)]="dob" aria-describedby="dobHelp"
+              placeholder="Enter age" />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputGender">Gender</label>
+            <select name="gender" id="" class="form-control" [(ngModel)]="gender">
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputDepartment">Department</label>
+            <input type="text" class="form-control" [(ngModel)]="department"
+              aria-describedby="departmentHelp" placeholder="Enter department" />
+            <div class="form-group">
+              <label for="exampleInputSalary">Salary</label>
+              <input type="number" class="form-control" [(ngModel)]="salary"
+                aria-describedby="salaryHelp" placeholder="Enter salary" min="0" />
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="col-md-6 mx-auto">
+              <button class="btn btn-warning text-white btn-block btn-lg" (click)="add()">ADD</button>
+            </div>
+          </div>
+
+    </div>
+  </div>
+  <div class="row mt-5">
+  <div class="mx-auto">
+  <a routerLink="/home" class="btn btn-warning text-white btn-lg">VIEW LIST</a>
+  </div>
+  </div>
+</div>
+</div>
+</body>
